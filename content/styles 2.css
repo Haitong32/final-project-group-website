@@ -1,9 +1,11 @@
 body {
   background-size:100% auto;
   background-repeat: no-repeat;
-  background-color: pink;
+  background-color: yellow;
   font-family: Arial;
 }
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 ul {
   position: fixed;
@@ -32,38 +34,50 @@ f1 {
     	vertical-align: bottom;
     	text-transform: lowercase;
     	}
+>>>>>>> 83b6982aa304fc4779f02485e747be39c3ae9776
+
+.draggable {
+	cursor: move;
+	padding: 1px;
+	display:none;
+	background-color: #CCC;
+	}
+
+  label {
+  	font-weight: bolder;
+  	font-size: 19px;
+  	line-height: 40px;
+  	margin-bottom: 0px;
+  	vertical-align: bottom;
+  	text-transform: lowercase;
+  	}
 
 
-  input[type="checkbox"] {
-      display:grid;
-      outline-style:solid;
-      outline-color: #15C3ED;
-      outline-width: 2px;
-  }
-
-  input[type="checkbox"] + label span {
-      display:left;
-      width:40px;
-      height:40px;
-      margin:-1px 4px 0 0;
-      vertical-align:middle;
-      /*background-image:url(fluffybox.png) no-repeat;
-      background-size:contain;*/
-      cursor:pointer;
-  }
-
-  input[type="checkbox"]:checked + label span {
-      /*background:url(fluffybackground.jpg) no-repeat;
-    background-size:40px 40px;*/
-  }
-
-
-.rudr_instafeed {
-    position: absolute;
+input[type="checkbox"] {
+    display:grid;
+    outline-style:solid;
+    outline-color: #15C3ED;
+    outline-width: 2px;
 }
 
-.fluffy2{
-	background-image:url('fluffybackground.jpg');
+input[type="checkbox"] + label span {
+    display:left;
+    width:40px;
+    height:40px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    /*background-image:url(fluffybox.png) no-repeat;
+    background-size:contain;*/
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    /*background:url(fluffybackground.jpg) no-repeat;
+  background-size:40px 40px;*/
+}
+
+.fluffy{
+	background-image:url('bluefur.jpg');
   min-height: 1000px;
   min-width: 1000px;
   background-position: center;
@@ -77,4 +91,29 @@ f1 {
     display: in-line;
     position: fixed;
 	}
+<<<<<<< HEAD
+
+h1 {
+  font-size: 60px;
+  position: absolute;
+  top: 500px;
+  right: 470px;
+
+}
+
+.explore {
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: #6EF02D;
+  position: absolute;
+  border-radius: 20px;
+  border-width: medium;
+  border-color: white;
+
+  top: 620px;
+  right: 650px;
+
+}
+=======
 >>>>>>> 194b2194e2505886b15b8010383c576d7e6ef880
+>>>>>>> 83b6982aa304fc4779f02485e747be39c3ae9776
