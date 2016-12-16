@@ -62,17 +62,23 @@ input[type="checkbox"]:checked + label span {
 	}
 
 h1 {
-  font-size: 44px;
+  font-size: 60px;
   position: absolute;
   top: 500px;
-  right: 550px;
+  right: 470px;
 
 }
 
 .explore {
-  font-size: 35px;
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: #6EF02D;
   position: absolute;
-  top: 600px;
-  right: 690px;
-  padding: 10px 24px;
+  border-radius: 20px;
+  border-width: medium;
+  border-color: white;
+
+  top: 620px;
+  right: 650px;
+
 }

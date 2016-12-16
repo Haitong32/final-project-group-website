@@ -1,49 +1,49 @@
 $(document).ready(function(){
+  $(function() {
 
-//   function startDrag(e) {
-//   				// determine event object
-//   				if (!e) {
-//   					var e = window.event;
-//   				}
-//
-//   				// IE uses srcElement, others use target
-//   				var targ = e.target ? e.target : e.srcElement;
-//
-//   				if (targ.className != 'dragme') {return};
-//   				// calculate event X, Y coordinates
-//   					offsetX = e.clientX;
-//   					offsetY = e.clientY;
-//
-//   				// assign default values for top and left properties
-//   				if(!targ.style.left) { targ.style.left='0px'};
-//   				if (!targ.style.top) { targ.style.top='0px'};
-//
-//   				// calculate integer values for top and left
-//   				// properties
-//   				coordX = parseInt(targ.style.left);
-//   				coordY = parseInt(targ.style.top);
-//   				drag = true;
-//
-//   				// move div element
-//   					document.onmousemove=dragDiv;
-//
-//   			}
-//   			function dragDiv(e) {
-//   				if (!drag) {return};
-//   				if (!e) { var e= window.event};
-//   				var targ=e.target?e.target:e.srcElement;
-//   				// move div element
-//   				targ.style.left=coordX+e.clientX-offsetX+'px';
-//   				targ.style.top=coordY+e.clientY-offsetY+'px';
-//   				return false;
-//   			}
-//   			function stopDrag() {
-//   				drag=false;
-//   			}
-//   			window.onload = function() {
-//   				document.onmousedown = startDrag;
-//   				document.onmouseup = stopDrag;
-//   			}
-//
 
+    // Fade in images
+
+    $('img').load(function() {
+            $(this).fadeIn('slow');
+          });
+
+
+    // Made draggables draggable
+
+    $( ".draggable" ).draggable({ containment: ".frame", cursor: "crosshair",  stack: ".draggable" });
+
+  $("input[type='checkbox']").change(function() {
+
+      switch (this.id) {
+
+        case 'fluffy':
+          if($(this).is(':checked')){
+              $("body").addClass("fluffy");
+                } else {
+                  $("body").removeClass("fluffy");
+                  }
+            break;
+
+            };
+
+
+
+          });
+
+  $(function() {
+        $('img[data-hover]').hover(function() {
+            $(this)
+                .attr('tmp', $(this).attr('src'))
+                .attr('src', $(this).attr('data-hover'))
+                .attr('data-hover', $(this).attr('tmp'))
+                .removeAttr('tmp');
+          }).each(function() {
+          $('<img />').attr('src', $(this).attr('data-hover'));
+          });;
+      });
+
+
+});
+});
 });

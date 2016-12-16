@@ -2,7 +2,9 @@ body {
   background-size:100% auto;
   background-repeat: no-repeat;
   background-color: pink;
+  font-family: Arial;
 }
+<<<<<<< HEAD
 ul {
   position: fixed;
   top:200px;
@@ -15,3 +17,64 @@ f1 {
   top:226px;
   z-index: 1;
 }
+=======
+.draggable{
+    position:relative;
+    width: 270px;
+    height: 203px;
+    cursor: move;
+  }
+    label {
+    	font-weight: bolder;
+    	font-size: 19px;
+    	line-height: 40px;
+    	margin-bottom: 0px;
+    	vertical-align: bottom;
+    	text-transform: lowercase;
+    	}
+
+
+  input[type="checkbox"] {
+      display:grid;
+      outline-style:solid;
+      outline-color: #15C3ED;
+      outline-width: 2px;
+  }
+
+  input[type="checkbox"] + label span {
+      display:left;
+      width:40px;
+      height:40px;
+      margin:-1px 4px 0 0;
+      vertical-align:middle;
+      /*background-image:url(fluffybox.png) no-repeat;
+      background-size:contain;*/
+      cursor:pointer;
+  }
+
+  input[type="checkbox"]:checked + label span {
+      /*background:url(fluffybackground.jpg) no-repeat;
+    background-size:40px 40px;*/
+  }
+
+
+.rudr_instafeed {
+    position: absolute;
+}
+
+.fluffy2{
+	background-image:url('fluffybackground.jpg');
+  min-height: 1000px;
+  min-width: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+
+	.checkboxes{
+    -webkit-appearance: none;
+    display: in-line;
+    position: fixed;
+	}
+>>>>>>> 194b2194e2505886b15b8010383c576d7e6ef880
