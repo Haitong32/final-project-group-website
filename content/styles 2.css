@@ -3,9 +3,15 @@ body {
   background-repeat: no-repeat;
   background-color: pink;
 }
-.draggable{
-    position:relative;
-    width: 270px;
-    height: 203px;
-    cursor: move;
-  }
+ul {
+  position: fixed;
+  top:200px;
+}
+f1 {
+  left:58px
+}
+.fur1 {
+  position: fixed;
+  top:226px;
+  z-index: 1;
+}
