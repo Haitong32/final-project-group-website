@@ -28,35 +28,6 @@ $(document).ready(function() {
   	        				}
   	    			break;
 
-
-
-  				case 'email':
-  					if($(this).is(':checked')){
-  							$(".email").css("visibility","visible");
-  	        			} else {
-  	        				$(".email").css("visibility","hidden");
-  	        				}
-  	    			break;
-
-
-
-  				case 'bio':
-  					if($(this).is(':checked')){
-  							$(".bio").css("visibility","visible");
-  	        			} else {
-  	        				$(".bio").css("visibility","hidden");
-  	        				}
-  	    			break;
-
-
-
-  				case 'work':
-  					if($(this).is(':checked')){
-  							$(".work").css("visibility","visible");
-  	        			} else {
-  	        				$(".work").css("visibility","hidden");
-  	        				}
-  	    			break;
   	    			};
 
 

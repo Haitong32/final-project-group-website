@@ -68,3 +68,11 @@ h1 {
   right: 550px;
 
 }
+
+.explore {
+  font-size: 35px;
+  position: absolute;
+  top: 600px;
+  right: 690px;
+  padding: 10px 24px;
+}
