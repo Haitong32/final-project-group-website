@@ -19,6 +19,10 @@
        <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous -->
        <!-- "></script> -->
 
+       <div class="container">
+       <!--checkboxes -->
+       <div class="checkboxes">
+       			<input type="checkbox" id="fluffy" name="fluffy"/><label for="fluffy"><span></span>make it fuzzy</label></div>
 
        <style>
        #rudr_instafeed{
@@ -40,6 +44,12 @@
    </head>
 	 <body>
 	 <!-- <div id="draggable" class="photo"> -->
+   <script>
+   $( function() {
+    $('#draggable').draggable();
+   } );
+   </script>
+
        <ul id="rudr_instafeed"></ul>
 		 <!-- </div> -->
        <script type="text/javascript">
@@ -71,16 +81,6 @@
        });
 
 </script>
-
-<script>
-$( function() {
- $('ul').draggable();
-} );
-</script>
-
-
-
-
 
 </head>
 <body>
