@@ -7,6 +7,30 @@
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<div class="frame"></div>
+
+<div class="hidden">
+	<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"fluffybackground.jpg",
+			)
+	//--><!]]>
+	</script>
+</div>
+
+<div class="container">
+<!--checkboxes -->
+<div class="four columns">
+			<input type="checkbox" id="fluffy" name="fluffy"/><label for="Fluffy"><span></span>make it fluffy</label></div>
+
  <script src="scripts.js"></script>
 	</body>
 </html>
