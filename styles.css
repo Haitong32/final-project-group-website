@@ -1,23 +1,78 @@
 body {
   background-size:100% auto;
   background-repeat: no-repeat;
-  background-color: green;
+  background-color: yellow;
+  font-family: Arial;
 }
 
+.draggable {
+	cursor: move;
+	padding: 1px;
+	display:none;
+	background-color: #CCC;
+	}
+
+  label {
+  	font-weight: bolder;
+  	font-size: 19px;
+  	line-height: 40px;
+  	margin-bottom: 0px;
+  	vertical-align: bottom;
+  	text-transform: lowercase;
+  	}
+
+
 input[type="checkbox"] {
-    display:none;
+    display:grid;
+    outline-style:solid;
+    outline-color: #15C3ED;
+    outline-width: 2px;
 }
 
 input[type="checkbox"] + label span {
-    display:flex;;
+    display:left;
     width:40px;
-    height:44px;
+    height:40px;
     margin:-1px 4px 0 0;
     vertical-align:middle;
-    background:url(fluffybox.png) left top;
+    /*background-image:url(fluffybox.png) no-repeat;
+    background-size:contain;*/
     cursor:pointer;
 }
 
 input[type="checkbox"]:checked + label span {
-    background:url(fluffybox.png) -40px top;
+    /*background:url(fluffybackground.jpg) no-repeat;
+  background-size:40px 40px;*/
+}
+
+.fluffy{
+	background-image:url('fluffybackground.jpg');
+  min-height: 1000px;
+  min-width: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+
+	.checkboxes{
+    -webkit-appearance: none;
+    display: in-line;
+    position: fixed;
+	}
+
+h1 {
+  font-size: 44px;
+  position: absolute;
+  top: 500px;
+  right: 550px;
+
+}
+
+.explore {
+  font-size: 35px;
+  position: absolute;
+  top: 600px;
+  right: 690px;
+  padding: 10px 24px;
 }
