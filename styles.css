@@ -82,3 +82,9 @@ h1 {
   right: 650px;
 
 }
+
+img{
+  position: fixed;
+  left: 400px;
+  top: 150px;
+}
